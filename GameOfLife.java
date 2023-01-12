@@ -1,4 +1,4 @@
-package week1project;
+package week1projects;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
