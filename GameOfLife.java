@@ -11,8 +11,6 @@ import java.util.List;
 public class GameOfLife {
     
     public static void main(String[] args) throws FileNotFoundException, IOException {
-
-        System.out.println("----------------------------------------------------------------------");
         
         BufferedReader br = new BufferedReader(new FileReader("./blinker.gol"));
 
@@ -42,7 +40,7 @@ public class GameOfLife {
                 while ((line = br.readLine()) != null) {
                     line = line.replace('*', '1');
                     line = line.replace(' ', '0');
-                    dataArr.add(convertToArray(line));
+                    dataArr.add(convertToArray(line)); //adds each line as an array to arraylist dataArr
                 }
             }
         }
@@ -117,7 +115,7 @@ public class GameOfLife {
 
         for (int i = Math.max(x - 1, 0); i <= Math.min(x + 1, row - 1); i++) {
             for (int j = Math.max(y - 1, 0); j <= Math.min(y + 1, col - 1); j++) {
-                liveNeighbour += grid[i][j];
+                liveNeighbour += grid[i][j]; //checks each neighbouring cell for live cells,max/min for index out of bound error
             }
         }
         liveNeighbour -= grid[x][y]; //takes away current cell value
