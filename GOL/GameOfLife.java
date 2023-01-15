@@ -1,4 +1,4 @@
-package week1projects;
+package GOL;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
