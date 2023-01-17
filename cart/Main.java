@@ -15,10 +15,10 @@ public class Main {
         System.out.println("""
             You may input the following commands:
             1. load - loads a user's cart
-            2. add - add one or more items to the cart. Multiple  items are separated by a single white space
-            3. delete -  delete an item using the item's index (from  the list command)
-            4. list - list the contents of the cart
-            5. save - save the contents of the shopping cart
+            2. add - adds one or more items to the cart. Multiple items must be separated by a single white space
+            3. delete -  deletes an item using the item's index (from  the list command)
+            4. list - lists the contents of the cart
+            5. save - saves the contents of the shopping cart
             6. exit - exits the shopping cart application """);
 
         while (!exit) {
