@@ -66,7 +66,7 @@ public class Cart2 {
         String temp = "";
         String[] str = input.trim().split(" ");
         int[] arr = new int[str.length];
-        for (int i = 0; i < str.length; i++) {
+        for (int i = 0; i < str.length;) {
             int num = Integer.parseInt(str[i]);
             arr[i] = num;
             try {
